@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2 - Nombres</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h2>Comparar Nombres</h2>
+    <form method="POST">
+        <label>Nombre 1:</label>
+        <input type="text" name="nombre1" required><br>
+
+        <label>Nombre 2:</label>
+        <input type="text" name="nombre2" required><br>
+
+        <label>Nombre 3:</label>
+        <input type="text" name="nombre3" required><br>
+
+        <button type="submit" class="btn">Enviar</button>
+    </form>
+    <br>
+    <a href="{{ url_for('index') }}">Volver al menú</a>
+</body>
+</html>

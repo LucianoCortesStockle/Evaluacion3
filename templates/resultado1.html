@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado - Notas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h2>Resultado del calculo</h2>
+    <p><strong>Promedio:</strong> {{ promedio }} puntos</p>
+    <p><strong>Estado:</strong> {{ estado }}</p>
+    <br>
+    <a href="{{ url_for('ejercicio1') }}">Volver al formulario</a> |
+    <a href="{{ url_for('index') }}">Menú principal</a>
+</body>
+</html>

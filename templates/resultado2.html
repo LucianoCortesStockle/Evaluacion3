@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado - Nombre más largo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h2>Nombre más largo</h2>
+    <p>El nombre con mayor número de caracteres es: <strong>{{ nombre }}</strong></p>
+    <p>Cantidad de caracteres: <strong>{{ longitud }}</strong></p>
+    <br>
+    <a href="{{ url_for('ejercicio2') }}">Volver al formulario</a> |
+    <a href="{{ url_for('index') }}">Menú principal</a>
+</body>
+</html>
